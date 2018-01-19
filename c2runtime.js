@@ -18840,8 +18840,8 @@ cr.behaviors.scrollto = function(runtime)
 cr.getObjectRefTable = function () { return [
 	cr.plugins_.Keyboard,
 	cr.plugins_.Mouse,
-	cr.plugins_.Sprite,
 	cr.plugins_.Text,
+	cr.plugins_.Sprite,
 	cr.plugins_.TiledBg,
 	cr.behaviors.EightDir,
 	cr.behaviors.scrollto,
@@ -18870,6 +18870,7 @@ cr.getObjectRefTable = function () { return [
 	cr.system_object.prototype.cnds.Every,
 	cr.system_object.prototype.acts.CreateObject,
 	cr.plugins_.Sprite.prototype.cnds.OnDestroyed,
-	cr.plugins_.Text.prototype.acts.SetVisible
+	cr.plugins_.Text.prototype.acts.SetVisible,
+	cr.system_object.prototype.cnds.CompareVar
 ];};
 
